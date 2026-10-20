@@ -756,7 +756,7 @@ export default function NotesApp() {
           <section className="composer">
             <AutoTextarea
               minHeight={110}
-              placeholder={"Write a note… a lyric, a title, a premise, anything.\nTip: start with #poem, #title, #story, #concept… to force a category."}
+              placeholder={"# for category"}
               value={draft}
               onChange={(e) => setDraft(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && (e.metaKey || e.ctrlKey) && addNote()}
